@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Community Photo Frame</title>
+
+  {{ bootstrap.load_css() }}
+  {{ dropzone.load() }}
+
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:900|Red+Hat+Text:400,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Community Photo Frame</h1>
+    <hr>
+
+    {{ dropzone.create(action_view='index') }}
+    {{ dropzone.config() }}
+
+    <form method="POST" enctype="multipart/form-data">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+
+</html>
