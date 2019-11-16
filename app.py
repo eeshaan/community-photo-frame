@@ -12,7 +12,7 @@ dropzone = Dropzone(app)
 app.config['DROPZONE_UPLOAD_MULTIPLE'] = True
 app.config['DROPZONE_ALLOWED_FILE_CUSTOM'] = True
 app.config['DROPZONE_ALLOWED_FILE_TYPE'] = 'image/*'
-# app.config['DROPZONE_REDIRECT_VIEW'] = 'results' #change to thanks
+app.config['DROPZONE_REDIRECT_VIEW'] = 'thanks'
 
 app.config['UPLOADED_PHOTOS_DEST'] = os.getcwd() + '/uploads'
 
