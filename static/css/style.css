@@ -1,0 +1,12 @@
+body {
+    font-family: 'Red Hat Text', 'Proxima Nova', 'Red Hat Display', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Red Hat Display', 'Red Hat Text', 'Proxima Nova', sans-serif;
+    font-weight: 900;
+  }
+  
+  hr {
+    border-top: 3px solid rgb(0, 0, 0);
+  }
